@@ -1,0 +1,11 @@
+C:\Users\USER\workspace\csharp\exercises\class-types\bin\Debug\netcoreapp2.1\class-types.deps.json
+C:\Users\USER\workspace\csharp\exercises\class-types\bin\Debug\netcoreapp2.1\class-types.runtimeconfig.json
+C:\Users\USER\workspace\csharp\exercises\class-types\bin\Debug\netcoreapp2.1\class-types.runtimeconfig.dev.json
+C:\Users\USER\workspace\csharp\exercises\class-types\bin\Debug\netcoreapp2.1\class-types.dll
+C:\Users\USER\workspace\csharp\exercises\class-types\bin\Debug\netcoreapp2.1\class-types.pdb
+C:\Users\USER\workspace\csharp\exercises\class-types\obj\Debug\netcoreapp2.1\class-types.csprojAssemblyReference.cache
+C:\Users\USER\workspace\csharp\exercises\class-types\obj\Debug\netcoreapp2.1\class-types.csproj.CoreCompileInputs.cache
+C:\Users\USER\workspace\csharp\exercises\class-types\obj\Debug\netcoreapp2.1\class-types.AssemblyInfoInputs.cache
+C:\Users\USER\workspace\csharp\exercises\class-types\obj\Debug\netcoreapp2.1\class-types.AssemblyInfo.cs
+C:\Users\USER\workspace\csharp\exercises\class-types\obj\Debug\netcoreapp2.1\class-types.dll
+C:\Users\USER\workspace\csharp\exercises\class-types\obj\Debug\netcoreapp2.1\class-types.pdb
