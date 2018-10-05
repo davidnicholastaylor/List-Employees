@@ -8,7 +8,7 @@ namespace class_types {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Title { get; set; }
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
     }
 
@@ -20,7 +20,7 @@ namespace class_types {
 
         // Create a public property for holding a list of current employees
 
-        List<string> employeesList = new List<string>();
+        public List<Employee> employeesList { get; set; }
 
         /*
             Create a constructor method that accepts two arguments:
@@ -34,6 +34,7 @@ namespace class_types {
         {
             Name = companyName;
             CreatedOn = companyStart;
+            employeesList = new List<Employee> ();
         }
 
     }
@@ -42,52 +43,48 @@ namespace class_types {
         static void Main (string[] args) {
             // Create an instance of a company. Name it whatever you like.
 
-            Company Fremulon = new Company()
-            {
-                Name = "Fremulon",
-                CreatedOn = "January 1, 2007"
-            };
+            Company fremulon = new Company("Fremulon", DateTime.Now);
 
             // Create three employees
 
-            Employee George = new Employee() 
+            Employee george = new Employee() 
             {
                 FirstName = "George",
                 LastName = "Cantstandya",
                 Title = "Jester",
-                StartDate = "Yesterday"
+                StartDate = new DateTime(2011, 8, 23)
             };
 
-            Employee Beth = new Employee()
+            Employee beth = new Employee()
             {
                 FirstName = "Beth",
                 LastName = "Any",
                 Title = "Queen",
-                StartDate = "The dawn of time"
+                StartDate = DateTime.Now
             };
             
-            Employee Blake = new Employee()
+            Employee blake = new Employee()
             {
                 FirstName = "Blake",
                 LastName = "Blakerson",
                 Title = "Fire",
-                StartDate = "Four score and 7 years ago"
+                StartDate = DateTime.Now
             };
 
             // Assign the employees to the company
 
-            employeesList.Add($"{George}");
-            employeesList.Add($"{Beth}");
-            employeesList.Add($"{Blake}");
+            fremulon.employeesList.Add(george);
+            fremulon.employeesList.Add(beth);
+            fremulon.employeesList.Add(blake);
 
             /*
                 Iterate the company's employee list and generate the
                 simple report shown above
             */
 
-            foreach (string employee in employeesList)
+            foreach (Employee employee in fremulon.employeesList)
             {
-                Console.WriteLine($"{employee.FirstName} {employee.LastName} works for {Company.companyName} as since {employee.StartDate}");
+                Console.WriteLine($"{employee.FirstName} {employee.LastName} works for {fremulon.Name} as since {employee.StartDate}");
             }
 
         }
